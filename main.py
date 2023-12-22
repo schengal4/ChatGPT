@@ -4,7 +4,7 @@ import openai
 import pandas as pd
 from streamlit_chat import message
 
-st.set_page_config(page_title="ChatGPT", layout="wide")
+st.set_page_config(page_title="ChatGPT", layout="centered", initial_sidebar_state="auto",)
 
 st.title('ChatGPT 4.0 Turbo Vision Preview')
 st.write('128,000 token context window. Ability to understand images. Returns a maximum of 4,096 output tokens.')
@@ -34,7 +34,7 @@ def main():
 
     # load previous messages, or empty list if there are no previous messages
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content":"Hi! I'm GPT 4 Turbo Vision. How can I help you today?"}]
+        st.session_state.messages = [{"role": "assistant", "content":"Hi! How can I help you today?"}]
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
