@@ -24,7 +24,7 @@ def get_response():
         messages= messages,
         stream=True,
     ):
-    full_response += response.choices[0].delta.get("content", "")
+        full_response += response.choices[0].delta.get("content", "")
     message_placeholder.markdown(full_response + "▌")
     return full_response
 
