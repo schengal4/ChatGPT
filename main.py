@@ -34,7 +34,7 @@ def main():
 
     # load previous messages, or empty list if there are no previous messages
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content":"Hi! I'm your App Building agent. What kind of app would you like to create? Please be as specific as possible. You may include the contents of a GitHub readme or scientific paper."}]
+        st.session_state.messages = [{"role": "assistant", "content":"Hi! I'm GPT 4 Turbo Vision. How can I help you today?"}]
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
