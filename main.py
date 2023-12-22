@@ -9,6 +9,7 @@ st.set_page_config(page_title="ChatGPT", layout="centered", initial_sidebar_stat
 st.title('ChatGPT 4.0 Turbo Vision Preview')
 st.write('128,000 token context window. Ability to understand images. Returns a maximum of 4,096 output tokens.')
 
+# TODO: What if someone enters the same key for the secrets in Health Universe's secret manager?
 openai.api_key = os.environ.get('OPENAI-KEY')
 
 CONTENT = open('resources/system_prompt.txt', 'r').read()
