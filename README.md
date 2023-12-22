@@ -2,4 +2,4 @@
 
 Internal tooling for ChatGPT 4 Turbo Vision Preview.
 
-TODO: System Prompt, Vision
+TODO: System Prompt, Vision, two users entering same secret
